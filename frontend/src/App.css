@@ -1,0 +1,224 @@
+/* 기본 초기화 및 폰트 */
+body {
+  margin: 0;
+  font-family: 'Pretendard', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.header p {
+  color: #7f8c8d;
+}
+
+/* 검색창 스타일 */
+.search-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #e0e6ed;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  resize: none;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #3498db;
+}
+
+.search-button {
+  padding: 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.search-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* 결과 리포트 카드 스타일 */
+.report-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.report-header {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #f1f2f6;
+  padding-bottom: 20px;
+}
+
+.report-header h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+}
+
+.destination {
+  color: #3498db;
+  font-weight: bold;
+}
+
+.report-section {
+  margin-bottom: 25px;
+}
+
+.report-section h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.report-section ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.highlight {
+  background-color: #f1f8ff;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #3498db;
+}
+
+.report-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px dashed #e0e6ed;
+}
+
+.footer-item {
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* 상단 네비게이션 버튼 */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  border: 2px solid #3498db;
+  background-color: transparent;
+  color: #3498db;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn.active, .nav-btn:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* 액션 버튼 (저장, 삭제) */
+.action-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.save-button, .delete-button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.save-button {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.save-button:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+/* 내 서랍 화면 스타일 */
+.drawer-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.empty-message {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  padding: 40px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.saved-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
