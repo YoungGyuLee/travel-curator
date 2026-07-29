@@ -83,12 +83,12 @@ function App() {
 
       <div className="report-body">
         <section className="report-section">
-          <h4>✨ 왜 이곳인가요? (Why)</h4>
+          <h4>왜 이곳인가요? (Why)</h4>
           <p>{reportData.why}</p>
         </section>
 
         <section className="report-section">
-          <h4>🎒 여기서 꼭 해봐야 할 것 (What to do)</h4>
+          <h4>여기서 꼭 해봐야 할 것 (What to do)</h4>
           <ul>
             {reportData.what_to_do.map((item, index) => (
               <li key={index}>{item}</li>
@@ -121,7 +121,7 @@ function App() {
   return (
     <div className="container">
       <header className="header">
-        <h1>✈️ AI 여행 감성 큐레이터</h1>
+        <h1>AI 여행 감성 큐레이터</h1>
         <p>지금 당신의 기분이나 원하는 여행의 무드를 자유롭게 적어주세요.</p>
         
         {/* 네비게이션 버튼 */}
